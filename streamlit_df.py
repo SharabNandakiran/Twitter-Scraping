@@ -12,7 +12,7 @@ st.write(1234)
 df = pd.DataFrame({
     'first column':[1,2,3,4],
     'second column':[10,20,30,40]
-    }]
+    })
 st.write(df)
   
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
