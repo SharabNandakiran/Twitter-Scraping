@@ -11,3 +11,8 @@ with st.form(key='Twitter_form'):
     limit = st.slider('How many tweets do you want to get?',0, 1000, step=20)
     submit_button = st.form_submit_button(label='Search')
              
+if submit_button:
+    c = twint.Config()
+
+    c.Search = search_term
+    c.Limit = limt
