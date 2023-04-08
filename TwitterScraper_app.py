@@ -1,4 +1,4 @@
-import snscrape.modules.twitter as sntwitter
+#import snscrape.modules.twitter as sntwitter
 import streamlit as st
 import pandas as pd
 import pymongo
