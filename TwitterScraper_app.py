@@ -7,7 +7,9 @@ from PIL import Image
 from datetime import date
 import json
 
-
+st.header("st.write")
+if st.write:
+  "Say hello"
 
 def main():
   tweets = 0
