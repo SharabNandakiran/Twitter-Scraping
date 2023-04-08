@@ -5,5 +5,5 @@ st.write("Hello")
 st.header('st.selectbox')
 
 option = st.selectbox(
-     ('About', 'Search', 'Upload', 'Download))
+     ('About', 'Search', 'Upload', 'Download'))
 
