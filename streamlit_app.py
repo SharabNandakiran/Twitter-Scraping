@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import twint
+import twint as tt
 
 st.header('st.button')
 
@@ -13,7 +13,7 @@ with st.form(key='Twitter_form'):
     submit_button = st.form_submit_button(label='Search')
              
 if submit_button:
-    c = twint.Config()
+    c = tt.Config()
 
     c.Search = search_term
     c.Limit = limt
