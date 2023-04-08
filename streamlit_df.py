@@ -2,6 +2,9 @@ import streamlit as st
 import numpy as np
 import altair as alt
 import pandas as pd
+import pandas_profiling
+from streamlit_pandas_profiling import st_profile_report
+
 
 st.header('st.write')
 
@@ -23,3 +26,11 @@ df2 = pd.DataFrame(
 c = alt.Chart(df2).mark_circle().encode(
     x='a', y='b', size='c', color='c',tooltip=['a','b','c'])
 st.write(c)
+
+
+st.header('`streamlit_pandas_profiling`')
+
+df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
+
+pr = df.profile_report()
+st_profile_report(pr)
