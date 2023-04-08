@@ -1,19 +1,15 @@
+import snscrape.modules.twitter as sntwitter
 import streamlit as st
 import pandas as pd
-import twint as tt
+import pymomgo
+from pymongo omport MongoClient
+from PIL import Image
+from datetime import date
+import json
 
-st.header('st.button')
 
-if st.button('Say hello'):
-     st.write('Why hello there')
-with st.form(key='Twitter_form'):
-    search_term = st.text_input('User name')
-    search_term = st.text_input('Date')
-    limit = st.slider('How many tweets do you want to get?',0, 1000, step=20)
-    submit_button = st.form_submit_button(label='Search')
-             
-if submit_button:
-    c = tt.Config()
-
-    c.Search = search_term
-    c.Limit = limt
+def main():
+    tweets = 0
+    st.title("Twitter Scraping")
+    menu = ["Home", "About", "Search", "Display", "Download"]
+    choice = st.sidebar.selectbox("Menu", menu)
