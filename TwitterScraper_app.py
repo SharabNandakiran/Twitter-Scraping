@@ -5,7 +5,7 @@ st.write("Hello")
 st.header('st.selectbox')
 
 option = st.selectbox(
-     'What is your favorite color?',
-     ('Blue', 'Red', 'Green'))
+     'Menu',
+     ('About', 'Search', 'Upload', 'Download'))
 
-st.write('Your favorite color is ', option)
+st.write('Menu ', option)
