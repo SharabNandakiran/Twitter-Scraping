@@ -1,11 +1,8 @@
 import streamlit as st
 
-st.write("Hello")
-
-st.header('st.selectbox')
-
-option = st.selectbox(
-     'Menu',
-     ('About', 'Search', 'Upload', 'Download'))
-
-st.write(option)
+def main():
+  tweets = 0
+  st.title("Twitter Scraping")
+  # Menus used in Twitter Scrape web app -- 5 menus are used
+  menu = ["Home","About","Search","Display","Download"]
+  choice = st.sidebar.selectbox("Menu",menu)
