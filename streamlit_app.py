@@ -1,7 +1,7 @@
 #import snscrape.modules.twitter as sntwitter
 import streamlit as st
 import pandas as pd
-import pymomgo
+#import pymomgo
 #from pymongo import MongoClient
 from PIL import Image
 from datetime import date
