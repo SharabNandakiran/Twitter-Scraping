@@ -8,4 +8,4 @@ option = st.selectbox(
      'Menu',
      ('About', 'Search', 'Upload', 'Download'))
 
-st.write('Menu ', option)
+st.write(option)
