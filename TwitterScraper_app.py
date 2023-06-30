@@ -41,7 +41,7 @@ def main():
                   It is used by developers to work esaily with real time data analystics, content management and lot of other web applications.''')
 
     with st.expander("Streamlit"):
-      st.write('''Streamlit is a **awesome opensource framwork used for buidling highly interactive sharable web applications*** in python language. 
+      st.write('''Streamlit is a **awesome opensource framework used for buidling highly interactive sharable web applications*** in python language. 
                   Its easy to share *machine learning and datasciecne web apps* using streamlit.
                   It allows the app to load the large set of datas from web for manipulation and  performing expensive computations.''')
 
